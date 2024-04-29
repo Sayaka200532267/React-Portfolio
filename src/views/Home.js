@@ -19,11 +19,17 @@ import PHP from "../asset/PHP.png";
 import WordPress from "../asset/WordPress.png";
 import MSSQL from "../asset/MSSQL.png";
 import Linux from "../asset/Linux.png";
-
+import Communication from "../asset/communication.jpg";
+import ProblemSolving from "../asset/problem-solving.jpg";
+import TimeManagement from "../asset/time-management.jpg";
+import Creativity from "../asset/creativity.jpg";
+import CriticalThinking from "../asset/critical-thinking.jpg";
+import MotivatedToLearn from "../asset/motivated-to-learn.jpg";
 function Home() {
     useEffect(() => {
         document.title = 'Home';
     }, []);
+
     const hardSkills = [
         { id: 1, name: "HTML", imagePath: HTML},
         { id: 2, name: "CSS", imagePath: CSS},
@@ -45,88 +51,115 @@ function Home() {
     ];
     
     const softSkills = [
-        { id: 1, name: "Communication" },
-        { id: 2, name: "Teamwork" },
-        { id: 3, name: "Problem-solving" },
-        { id: 4, name: "Time management" },
-        { id: 5, name: "Adaptability" },
-        { id: 6, name: "Creativity" },
-        { id: 7, name: "Attention to detail" },
-        { id: 8, name: "Critical thinking" },
-        { id: 9, name: "Motivated to learn" },
+        { id: 1, name: "Communication, Teamwork", importPath: Communication },
+        { id: 2, name: "Problem-solving", importPath: ProblemSolving},
+        { id: 3, name: "Time management", importPath: TimeManagement},
+        { id: 4, name: "Creativity", importPath: Creativity},
+        { id: 5, name: "Critical thinking", importPath: CriticalThinking},
+        { id: 6, name: "Motivated to learn", importPath: MotivatedToLearn},
     ];
     
+
     return (
         <div>
-            <section className="main">
-                <h1>Welcome to My Portfolio</h1>
-            </section>
 
+<section className="main">
+<section className="main relative">
+  <div className="hero-image">
+  <h1>Welcome to My Portfolio</h1>
+  <h2>Sayaka Ohara</h2>
+  </div>
+</section>
+
+</section>
             <section className="page-section" id="aboutMe">
                 <div className="container">
                     <div className="text-center">
-                        <h2 className="section-heading text-uppercase m-5">About Me</h2>
+                        <h1 className="section-heading text-uppercase m-5">About Me</h1>
                     </div>
-                    <div className="row justify-content-center align-items-center">
+                    <div className="row justify-content-center align-items-center mt-4">
                         <div className="col-lg-4">
                             <div className="about text-center">
-                                <img className="mx-auto rounded-circle" src={Graduate} width="200" height="200" alt="graduate" />
-                                <h1 className="text-center m-1">Graduate</h1>
+                                <img className="rounded-circle" src={Graduate} width="150" height="150" alt="graduate" />
+                                <h1 className="text-center">Graduate</h1>
                                 <p>I am a recent graduate of Georgian College, Barrie, ON. My program was Interactive Media Design - Web, where I studied Web Development, Programming, and Web Design, including UX/UI.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
-                                <img className="rounded-circle" src={Toronto} width="200" height="200" alt="Toronto" />
-                                <h1 className="text-center m-2">Toronto</h1>
+                                <img className="rounded-circle" src={Toronto} width="150" height="150" alt="Toronto" />
+                                <h1 className="text-center">Toronto</h1>
                                 <p>I am currently seeking opportunities in Toronto, as I live there. I am also open to remote positions in the field of Web Development. I am eager to apply my skills and continue learning and growing in this dynamic industry.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
-                                <img className="mx-auto rounded-circle" src={Code} width="200" height="200" alt="code" />
-                                <h1 className="m-2">Web Development</h1>
-                                <p>Throughout my journey, I have developed proficiency in technologies such as HTML, CSS, JavaScript, React, Node.js and more. I am passionate about creating user-friendly and visually appealing web experiences.</p>
+                                <img className="rounded-circle" src={Code} width="150" height="150" alt="code" />
+                                <h1 className="text-center">Web Development</h1>
+                                <p>Throughout my study, I have developed proficiency in technologies such as HTML, CSS, JavaScript, React, Node.js and more.I am passionate about creating user-friendly and visually appealing web experiences.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-12 text-center m-5">
-                            <p className="contact"><strong>Feel free to reach out to me at sayakaohara[AT]outlook[DOT]com. I look forward to connecting with you!</strong></p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section className="page-section" id="skills">
-                <h1>Skills</h1>
-                <p>Throughout my study, I acquired many web development and web design skills.</p>
-
-                <section className="page-section" id="hardSkills">
-                    <h2>Hard Skills</h2>
-                    <div className="card-columns">
-                        {hardSkills.map((skill) => (
-                            <div className="card" key={skill.name}>
-                                <img className="card-img-top" src={skill.imagePath}style={{ width: "100px", height: "auto" }} alt={skill.name} />
+<section className="page-section" id="skills">
+    <h1 className="text-center text-uppercase mt-5">Skills</h1>
+<div className="accordion" id="accordionSkills">
+    <div className="accordion-item mt-5">
+    <h2 className="accordion-header " id="hardSkillsHeader">
+            <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardSkills" aria-expanded="false" aria-controls="collapseHardSkills">
+                Hard Skills
+            </button>
+        </h2>
+        <div id="collapseHardSkills" className="accordion-collapse collapse" aria-labelledby="hardSkillsHeader" data-bs-parent="#accordionSkills">
+            <div className="accordion-body">
+                <div className="row justify-content-center skill-cards">
+                    {hardSkills.map((skill, index) => (
+                        <div className="col-lg-4 mb-2 pt-2" key={skill.name}>
+                            <div className="card text-center">
+                                <img className="card-img-top mx-auto mt-4" src={skill.imagePath} style={{ width: "80px", height: "80px" }} alt={skill.name} />
                                 <div className="card-body">
                                     <h5 className="card-title">{skill.name}</h5>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </section>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="accordion-item">
+        <h2 className="accordion-header" id="softSkillsHeader">
+            <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoftSkills" aria-expanded="false" aria-controls="collapseSoftSkills" >
+                Soft Skills
+            </button>
+        </h2>
+        <div id="collapseSoftSkills" className="accordion-collapse collapse" aria-labelledby="softSkillsHeader" data-bs-parent="#accordionSkills">
+            <div className="accordion-body">
+                <div className="row justify-content-center skill-cards">
+                    {softSkills.map((softSkill) => (
+                        <div className="col-lg-4 mb-2 pt-2" key={softSkill.id}>
+                            <div className="card text-center">
+                                <div className="card-img-top d-flex align-items-end justify-content-center mt-5" style={{ width: "330px", height: "130px" }}>
+                                    <img className="mx-auto" src={softSkill.importPath || "placeholder_path"} style={{ height: "140px", width: "auto" }} alt={softSkill.name} />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title">{softSkill.name}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <section className="page-section" id="softSkills">
-                    <h2>Soft Skills</h2>
-                    <ul className="list-group">
-                        {softSkills.map((softSkill) => (
-                            <li className="list-group-item" key={softSkill.id}>
-                                {softSkill.name}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-            </section>
+
+</section>
+
+
+
         </div>
     );
 }

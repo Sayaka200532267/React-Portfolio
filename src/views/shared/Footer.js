@@ -7,10 +7,10 @@ function Footer() {
     <div className="col-lg-12 mt-5 pt-2 pb-2" style={{ background: "var(--main-color)" }}>
       <div className="row justify-content-center align-items-center text-center"> 
         <div className="col-lg-12">
-          <p className="contact" style={{ paddingLeft: "50px", marginBottom: "5px" }}> 
+          <p className="contact text-white" style={{ paddingLeft: "50px", marginBottom: "5px" }}> 
             Sayaka Ohara
           </p>
-          <p style={{ marginBottom: "10px" }}>Email: sayakaohara[AT]outlook[DOT]com</p>
+          <p className="text-white" style={{ marginBottom: "10px" }}>Email: sayakaohara[AT]outlook[DOT]com</p>
           <ul className="footer-list d-inline-flex align-items-center justify-content-center" style={{ marginBottom: "0" }}> 
             <li className="mr-5">
               <a href="https://www.linkedin.com/in/sayaka-ohara-030441264/">

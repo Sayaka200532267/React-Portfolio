@@ -12,7 +12,7 @@ html{
     --second-color: rgb(22, 85, 49);
 }
 
-
+/* home */
 section.main h1,
 section.main h2 {
     color:  rgb(253, 78, 78);
@@ -35,26 +35,6 @@ section.main h2 {
   font-size: 40px;
   font-family: "Dancing Script", cursive;
 }
-
-
-.about img {
-  text-align: center;
-  background: var(--main-color);
-  padding: 20px;
-}
-
-
-.contact{
- font-size: 20px;
-}
-.ml-auto {
-    margin-left: auto !important;
-    display: flex;
-    align-items: center; 
-    margin-top: 0;
-  }
-  /* home */
-
   section.main {
     position: relative;
      background-image: url('asset/home.jpg');
@@ -65,6 +45,21 @@ section.main h2 {
     margin-top: 0;
     padding-top: 0;
 }
+
+/* about */
+.about img {
+  text-align: center;
+  background: var(--main-color);
+  padding: 20px;
+}
+
+
+.ml-auto {
+    margin-left: auto !important;
+    display: flex;
+    align-items: center; 
+    margin-top: 0;
+  }
 
 /* header */
 .navbar{
@@ -104,15 +99,6 @@ button {
   background: var(--main-color);
 
 }
-/* Override Bootstrap's default arrow color */
-.accordion-button {
-  color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  color: white; /* Change color for expanded state */
-}
-
 /* footer */
 .footer-list {
     list-style: none;
@@ -124,3 +110,6 @@ button {
     color: black; 
     padding-left: 10px;
   }
+  .contact{
+    font-size: 20px;
+   }

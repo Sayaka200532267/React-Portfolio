@@ -30,6 +30,7 @@ function Home() {
         document.title = 'Home';
     }, []);
 
+    // Hard skills and soft skills data
     const hardSkills = [
         { id: 1, name: "HTML", imagePath: HTML},
         { id: 2, name: "CSS", imagePath: CSS},
@@ -62,7 +63,7 @@ function Home() {
 
     return (
         <div>
-
+{/* home section */}
 <section className="main">
 <section className="main relative">
   <div className="hero-image">
@@ -70,8 +71,8 @@ function Home() {
   <h2>Sayaka Ohara</h2>
   </div>
 </section>
-
 </section>
+{/* about me section */}
             <section className="page-section" id="aboutMe">
                 <div className="container">
                     <div className="text-center">
@@ -102,6 +103,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+            {/* skills section */}
 <section className="page-section" id="skills">
     <h1 className="text-center text-uppercase mt-5">Skills</h1>
 <div className="accordion" id="accordionSkills">

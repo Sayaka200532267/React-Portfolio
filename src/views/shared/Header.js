@@ -1,12 +1,10 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../index.css";
 import Logo from "../../asset/logo.png";
 
+// add function Header() {
 function Header() {
-  const location = useLocation();
-  const isHomePage = location.pathname === "/";
-
   const scrollToAboutMe = (e) => {
     e.preventDefault();
     const aboutMeSection = document.getElementById("aboutMe");
@@ -14,7 +12,7 @@ function Header() {
       aboutMeSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+// add function scrollToSkills(e) {
   const scrollToSkills = (e) => {
     e.preventDefault();
     const skillsSection = document.getElementById("skills");
@@ -22,7 +20,6 @@ function Header() {
       skillsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="navbar-brand mt-2">
@@ -39,7 +36,6 @@ style={{
   fontSize: "20px",
   color: "#ff3385",
 }}
-
   onClick={scrollToAboutMe}
 >
   <strong>About Me</strong>

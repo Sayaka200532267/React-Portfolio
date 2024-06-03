@@ -68,7 +68,9 @@ function Home() {
 <section className="main relative">
   <div className="hero-image">
   <h1>Welcome to My Portfolio</h1>
-  <h2>Sayaka Ohara</h2>
+ 
+  <p>A responsible, well-organized professional with a diploma in Interactive Media Design - Web from Georgian College. Specializing in both web development and web design brings a comprehensive skill set in creating and managing dynamic web applications.</p>
+ <h2>Sayaka Ohara</h2>
   </div>
 </section>
 </section>

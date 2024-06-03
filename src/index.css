@@ -14,22 +14,35 @@ html{
 
 /* home */
 section.main h1,
-section.main h2 {
+section.main h2
+{
     color:  rgb(253, 78, 78);
+    text-shadow: 3px 3px 5px rgba(131,58,180,1), 3px 3px 5px rgba(252, 176, 69, 1);
+}
+section.main p {
+    color: rgb(125, 23, 193);
     text-shadow: 3px 3px 5px rgba(131,58,180,1), 3px 3px 5px rgba(252, 176, 69, 1);
 }
 section.main h1 {
   position: absolute;
-  top: 200px;
+  top: 130px;
   left: 60%;
   transform: translateX(-50%);
   font-size: 60px;
   width: 1000px;
 }
+section.main p {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  width: 800px;
+}
 
 section.main h2 {
   position: absolute;
-  top: 350px;
+  top: 360px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 40px;

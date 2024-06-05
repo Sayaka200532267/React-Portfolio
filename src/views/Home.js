@@ -85,21 +85,21 @@ function Home() {
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Graduate} width="150" height="150" alt="graduate" />
                                 <h1 className="text-center">Graduate</h1>
-                                <p>I am a recent graduate of Georgian College, Barrie, ON. My program was Interactive Media Design - Web, where I studied Web Development, Programming, and Web Design, including UX/UI.</p>
+                                <p>As a recent graduate of Georgian College in Barrie, ON, with a degree in Interactive Media Design - Web, I possess a comprehensive understanding of web development, programming, and UX/UI design principles. Eager to apply my skills, I'm actively seeking opportunities in web development for a fulfilling career.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Toronto} width="150" height="150" alt="Toronto" />
                                 <h1 className="text-center">Toronto</h1>
-                                <p>I am currently seeking opportunities in Toronto, as I live there. I am also open to remote positions in the field of Web Development. I am eager to apply my skills and continue learning and growing in this dynamic industry.</p>
+                                <p>Based in Toronto, I'm actively seeking web development opportunities, locally and remotely. With a passion for growth, I aim to leverage my skills to contribute to impactful projects, driving success and continual learning in this dynamic industry.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Code} width="150" height="150" alt="code" />
                                 <h1 className="text-center">Web Development</h1>
-                                <p>Throughout my study, I have developed proficiency in technologies such as HTML, CSS, JavaScript, React, Node.js and more.I am passionate about creating user-friendly and visually appealing web experiences.</p>
+                                <p>Throughout my studies, I've mastered HTML, CSS, JavaScript, React, Node.js, and more. With a passion for user-friendly web experiences, I've led projects boosting user engagement. Now, I'm eager to apply my skills in web development, aiming for continued success and growth.</p>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ section.main p {
 }
 section.main h1 {
   position: absolute;
-  top: 130px;
+  top: 250px;
   left: 60%;
   transform: translateX(-50%);
   font-size: 60px;
@@ -33,7 +33,7 @@ section.main h1 {
 }
 section.main p {
   position: absolute;
-  top: 250px;
+  top: 350px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
@@ -42,7 +42,7 @@ section.main p {
 
 section.main h2 {
   position: absolute;
-  top: 360px;
+  top: 500px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 40px;
@@ -50,8 +50,8 @@ section.main h2 {
 }
   section.main {
     position: relative;
-     background-image: url('asset/home.jpg');
-    height: 600px; 
+    background-image: url('asset/home.jpg');
+    height: 700px; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

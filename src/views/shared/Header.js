@@ -12,6 +12,7 @@ function Header() {
       aboutMeSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
 // add function scrollToSkills(e) {
   const scrollToSkills = (e) => {
     e.preventDefault();

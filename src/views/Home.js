@@ -25,13 +25,14 @@ import TimeManagement from "../asset/time-management.jpg";
 import Creativity from "../asset/creativity.jpg";
 import CriticalThinking from "../asset/critical-thinking.jpg";
 import MotivatedToLearn from "../asset/motivated-to-learn.jpg";
+import Teamwork from "../asset/teamwork.jpg";
 function Home() {
     useEffect(() => {
         document.title = 'Home';
     }, []);
 
-    // Hard skills and soft skills data
-    const hardSkills = [
+    // Technical skills and soft skills data
+    const technicalSkills = [
         { id: 1, name: "HTML", imagePath: HTML},
         { id: 2, name: "CSS", imagePath: CSS},
         { id: 3, name: "JavaScript", imagePath: JS},
@@ -51,13 +52,16 @@ function Home() {
         { id: 20, name: "Linux", imagePath: Linux} 
     ];
     
-    const softSkills = [
-        { id: 1, name: "Communication, Teamwork", importPath: Communication },
+    const criticalThinking = [
+        { id: 1, name: "Critical thinking", importPath: CriticalThinking},
         { id: 2, name: "Problem-solving", importPath: ProblemSolving},
-        { id: 3, name: "Time management", importPath: TimeManagement},
-        { id: 4, name: "Creativity", importPath: Creativity},
-        { id: 5, name: "Critical thinking", importPath: CriticalThinking},
-        { id: 6, name: "Motivated to learn", importPath: MotivatedToLearn},
+    ] 
+    const softSkills = [
+        { id: 1, name: "Communication", importPath: Communication },
+        { id: 2, name: "Time management", importPath: TimeManagement},
+        { id: 3, name: "Creativity", importPath: Creativity},
+        { id: 4, name: "Motivated to learn", importPath: MotivatedToLearn},
+        { id: 5, name: "Teamwork", importPath: Teamwork},
     ];
     
 
@@ -98,7 +102,7 @@ function Home() {
                         <div className="col-lg-4">
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Code} width="150" height="150" alt="code" />
-                                <h1 className="text-center">Web Development</h1>
+                                <h1 className="text-center">Project</h1>
                                 <p>Throughout my studies, I've mastered HTML, CSS, JavaScript, React, Node.js, and more. With a passion for user-friendly web experiences, I've led projects boosting user engagement. Now, I'm eager to apply my skills in web development, aiming for continued success and growth.</p>
                             </div>
                         </div>
@@ -106,66 +110,90 @@ function Home() {
                 </div>
             </section>
             {/* skills section */}
-<section className="page-section" id="skills">
-    <h1 className="text-center text-uppercase mt-5">Skills</h1>
-<div className="accordion" id="accordionSkills">
+            <section className="page-section" id="skills">
+  <h1 className="text-center text-uppercase mt-5">Skills</h1>
+  <div className="accordion" id="accordionSkills">
     <div className="accordion-item mt-5">
-    <h2 className="accordion-header " id="hardSkillsHeader">
-            <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardSkills" aria-expanded="false" aria-controls="collapseHardSkills">
-                Hard Skills
-            </button>
-        </h2>
-        <div id="collapseHardSkills" className="accordion-collapse collapse" aria-labelledby="hardSkillsHeader" data-bs-parent="#accordionSkills">
-            <div className="accordion-body">
-                <div className="row justify-content-center skill-cards">
-                    {hardSkills.map((skill, index) => (
-                        <div className="col-lg-4 mb-2 pt-2" key={skill.name}>
-                            <div className="card text-center">
-                                <img className="card-img-top mx-auto mt-4" src={skill.imagePath} style={{ width: "80px", height: "80px" }} alt={skill.name} />
-                                <div className="card-body">
-                                    <h5 className="card-title">{skill.name}</h5>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+      <h2 className="accordion-header" id="TechnicalSkillsHeader">
+        <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechnicalSkills" aria-expanded="true" aria-controls="collapseTechnicalSkills">
+          Technical Skills
+        </button>
+      </h2>
+      <div id="collapseTechnicalSkills" className="accordion-collapse collapse show" aria-labelledby="TechnicalSkillsHeader" data-bs-parent="#accordionSkills">
+        <div className="accordion-body">
+          <div className="row justify-content-center skill-cards">
+            {technicalSkills.map((skill, index) => (
+              <div className="col-lg-4 mb-2 pt-2" key={skill.name}>
+                <div className="card text-center">
+                  <img className="card-img-top mx-auto mt-4" src={skill.imagePath} style={{ width: "80px", height: "80px" }} alt={skill.name} />
+                  <div className="card-body">
+                    <h5 className="card-title">{skill.name}</h5>
+                  </div>
                 </div>
-            </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </div>
+
     <div className="accordion-item">
-        <h2 className="accordion-header" id="softSkillsHeader">
-            <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoftSkills" aria-expanded="false" aria-controls="collapseSoftSkills" >
-                Soft Skills
-            </button>
-        </h2>
-        <div id="collapseSoftSkills" className="accordion-collapse collapse" aria-labelledby="softSkillsHeader" data-bs-parent="#accordionSkills">
-            <div className="accordion-body">
-                <div className="row justify-content-center skill-cards">
-                    {softSkills.map((softSkill) => (
-                        <div className="col-lg-4 mb-2 pt-2" key={softSkill.id}>
-                            <div className="card text-center">
-                                <div className="card-img-top d-flex align-items-end justify-content-center mt-5" style={{ width: "330px", height: "130px" }}>
-                                    <img className="mx-auto" src={softSkill.importPath || "placeholder_path"} style={{ height: "140px", width: "auto" }} alt={softSkill.name} />
-                                </div>
-                                <div className="card-body">
-                                    <h5 className="card-title">{softSkill.name}</h5>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+      <h2 className="accordion-header" id="CriticalThinkingHeader">
+        <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCriticalThinking" aria-expanded="false" aria-controls="collapseCriticalThinking">
+          Critical Thinking Skills
+        </button>
+      </h2>
+      <div id="collapseCriticalThinking" className="accordion-collapse collapse" aria-labelledby="CriticalThinkingHeader" data-bs-parent="#accordionSkills">
+        <div className="accordion-body">
+          <div className="row justify-content-center skill-cards">
+            {criticalThinking.map((criticalThinking) => (
+              <div className="col-lg-4 mb-2 pt-2" key={criticalThinking.id}>
+                <div className="card text-center">
+                  <div className="card-img-top d-flex align-items-end justify-content-center mt-5" style={{ width: "330px", height: "130px" }}>
+                    <img className="mx-auto" src={criticalThinking.importPath || "placeholder_path"} style={{ height: "140px", width: "auto" }} alt={criticalThinking.name} />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">{criticalThinking.name}</h5>
+                  </div>
                 </div>
-            </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-</section>
-
-
-
+    <div className="accordion-item">
+      <h2 className="accordion-header" id="softSkillsHeader">
+        <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoftSkills" aria-expanded="false" aria-controls="collapseSoftSkills">
+          Soft Skills
+        </button>
+      </h2>
+      <div id="collapseSoftSkills" className="accordion-collapse collapse" aria-labelledby="softSkillsHeader" data-bs-parent="#accordionSkills">
+        <div className="accordion-body">
+          <div className="row justify-content-center skill-cards">
+            {softSkills.map((softSkill) => (
+              <div className="col-lg-4 mb-2 pt-2" key={softSkill.id}>
+                <div className="card text-center">
+                  <div className="card-img-top d-flex align-items-end justify-content-center mt-5" style={{ width: "330px", height: "130px" }}>
+                    <img className="mx-auto" src={softSkill.importPath || "placeholder_path"} style={{ height: "140px", width: "auto" }} alt={softSkill.name} />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">{softSkill.name}</h5>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-    );
-}
+      </div>
+    </div>
+  </div>
+</section>
+        
+        </div>
+
+        );
+    };
 
 export default Home;

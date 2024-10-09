@@ -89,21 +89,21 @@ function Home() {
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Graduate} width="150" height="150" alt="graduate" />
                                 <h1 className="text-center">Graduate</h1>
-                                <p>As a recent graduate of Georgian College in Barrie, ON, with a degree in Interactive Media Design - Web, I possess a comprehensive understanding of web development, programming, and UX/UI design principles. Eager to apply my skills, I'm actively seeking opportunities in web development for a fulfilling career.</p>
+                                <p>With a degree in Interactive Media Design - Web, Computer Science, I possess a comprehensive understanding of web development, programming, and UX/UI design principles.  Enthusiastic about applying my skills, I'm actively seeking opportunities in web development for a fulfilling career.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Toronto} width="150" height="150" alt="Toronto" />
                                 <h1 className="text-center">Toronto</h1>
-                                <p>Based in Toronto, I'm actively seeking web development opportunities, locally and remotely. With a passion for growth, I aim to leverage my skills to contribute to impactful projects, driving success and continual learning in this dynamic industry.</p>
+                                <p>I'm actively seeking web development opportunities, locally and remotely. Although the closest city is Toronto, I am open to relocating anywhere in GTA. With a passion for growth, I aim to leverage my skills to contribute to impactful projects, driving success and continual learning in this dynamic industry.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="about text-center">
                                 <img className="rounded-circle" src={Code} width="150" height="150" alt="code" />
                                 <h1 className="text-center">Project</h1>
-                                <p>Throughout my studies, I've mastered HTML, CSS, JavaScript, React, Node.js, and more. With a passion for user-friendly web experiences, I've led projects boosting user engagement. Now, I'm eager to apply my skills in web development, aiming for continued success and growth.</p>
+                                <p>Throughout my studies, I've mastered HTML, CSS, JavaScript, React, Node.js, and more. With a passion for user-friendly web experiences, I've led projects boosting user engagement. Now, I'm ready to apply my skills in web development, aiming for continued success and growth.</p>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ function Home() {
   <div className="accordion" id="accordionSkills">
     <div className="accordion-item mt-5">
       <h2 className="accordion-header" id="TechnicalSkillsHeader">
-        <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechnicalSkills" aria-expanded="true" aria-controls="collapseTechnicalSkills">
+        <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechnicalSkills" aria-expanded="true" aria-controls="collapseTechnicalSkills" >
           Technical Skills
         </button>
       </h2>
@@ -140,7 +140,7 @@ function Home() {
     <div className="accordion-item">
       <h2 className="accordion-header" id="CriticalThinkingHeader">
         <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCriticalThinking" aria-expanded="false" aria-controls="collapseCriticalThinking">
-          Critical Thinking Skills
+        <span className="button-text">Critical Thinking Skills</span>
         </button>
       </h2>
       <div id="collapseCriticalThinking" className="accordion-collapse collapse" aria-labelledby="CriticalThinkingHeader" data-bs-parent="#accordionSkills">

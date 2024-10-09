@@ -17,15 +17,15 @@ section.main h1,
 section.main h2
 {
     color:  rgb(253, 78, 78);
-    text-shadow: 3px 3px 5px rgba(131,58,180,1), 3px 3px 5px rgba(252, 176, 69, 1);
+    text-shadow: 3px 3px 5px rgba(131,58,180,1);
 }
 section.main p {
-    color: rgb(125, 23, 193);
-    text-shadow: 3px 3px 5px rgba(131,58,180,1), 3px 3px 5px rgba(252, 176, 69, 1);
+    color: rgb(254, 252, 254);
+    text-shadow: 3px 3px 5px rgb(171, 95, 247);
 }
 section.main h1 {
   position: absolute;
-  top: 250px;
+  top: 100px;
   left: 60%;
   transform: translateX(-50%);
   font-size: 60px;
@@ -33,7 +33,7 @@ section.main h1 {
 }
 section.main p {
   position: absolute;
-  top: 350px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
@@ -42,7 +42,7 @@ section.main p {
 
 section.main h2 {
   position: absolute;
-  top: 500px;
+  top: 300px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 40px;
@@ -107,11 +107,16 @@ section.main h2 {
 #skills {
   margin-left: 40px;
   margin-right: 40px;
+
 }
 button {
   background: var(--main-color);
 
 }
+.button-text{
+  text-align: center;
+}
+
 /* footer */
 .footer-list {
     list-style: none;

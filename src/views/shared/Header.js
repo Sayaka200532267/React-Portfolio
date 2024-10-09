@@ -24,7 +24,8 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="navbar-brand mt-2">
-        <img className="logo"src={Logo} height="80px" width="auto" alt="Logo"   />
+      <img className="logo" src={Logo} height="80px" width="auto" alt="Logo" />
+
       </div>
 
       <div className="ml-auto ml-10">
@@ -35,7 +36,7 @@ function Header() {
   className="nav-link"
 style={{
   fontSize: "20px",
-  color: "#ff3385",
+  color: "#f30c79",
 }}
   onClick={scrollToAboutMe}
 >
@@ -45,7 +46,7 @@ style={{
           <li className="nav">
             <Link to="/skills" className="nav-link"   style={{
      fontSize: "20px",
-       color: "#ff3385",
+       color: "#f30c79",
   }} onClick={scrollToSkills}>
              <strong>Skills</strong> 
             </Link>

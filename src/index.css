@@ -24,10 +24,6 @@ section.main p {
     text-shadow: 3px 3px 5px rgb(171, 95, 247);
 }
 section.main h1 {
-  position: absolute;
-  top: 100px;
-  left: 60%;
-  transform: translateX(-50%);
   font-size: 60px;
   width: 1000px;
 }
@@ -48,22 +44,13 @@ section.main h2 {
   font-size: 40px;
   font-family: "Dancing Script", cursive;
 }
-  section.main {
-    position: relative;
-    background-image: url('asset/home.jpg');
-    height: 700px; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 0;
-    padding-top: 0;
-}
 
 /* about */
 .about img {
   text-align: center;
   background: var(--main-color);
   padding: 20px;
+  
 }
 
 

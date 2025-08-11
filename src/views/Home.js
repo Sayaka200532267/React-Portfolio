@@ -105,7 +105,7 @@ function Home() {
             gap: "20px",
           }}
         >
-          <h1 style={{ margin: 0, marginBottom: "290px", }}>Welcome to My Portfolio</h1>
+          <h1 style={{ margin: 0, marginBottom: "250px", }}>Welcome to My Portfolio</h1>
           <p style={{ margin: 0, maxWidth: "600px" }}>
             A results-driven and detail-oriented digital marketing professional with a diploma in Interactive Media Design - Web
             from Georgian College. Specializing in advertising campaign management, data analysis, and optimizing ad performance
